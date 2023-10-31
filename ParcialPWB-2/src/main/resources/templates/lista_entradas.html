@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Encabezado de la página -->
+</head>
+<body>
+    <!-- Tabla para mostrar las entradas de vehículos -->
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Placa</th>
+            <th>Hora de entrada</th>
+            <th>Hora de salida</th>
+            <th>Ubicación</th>
+            <th>Tipo de vehículo</th>
+        </tr>
+        <!-- Iterar sobre las entradas y mostrarlas en la tabla -->
+        <tr th:each="entrada : ${entradas}">
+            <td th:text="${entrada.id}"></td>
+            <td th:text="${entrada.placa}"></td>
+            <td th:text="${entrada.horaEntrada}"></td>
+            <td th:text="${entrada.horaSalida}"></td>
+            <td th:text="${entrada.ubicacion}"></td>
+            <td th:text="${entrada.tipoVehiculo}"></td>
+        </tr>
+    </table>
+</body>
+</html>

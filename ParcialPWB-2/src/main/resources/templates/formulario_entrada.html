@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Encabezado de la página -->
+</head>
+<body>
+    <!-- Formulario de registro de entrada de vehículo -->
+    <form method="post" th:action="@{/entradas/nueva}">
+        <!-- Campos del formulario -->
+        <input type="text" name="placa" placeholder="Placa del vehículo" />
+        <input type="text" name="horaEntrada" placeholder="Hora de entrada" />
+        <input type="text" name="horaSalida" placeholder="Hora de salida" />
+        <input type="text" name="ubicacion" placeholder="Ubicación" />
+        <select name="tipoVehiculo">
+            <option value="carro">Carro</option>
+            <option value="motocicleta">Motocicleta</option>
+            <option value="cicla">Cicla</option>
+        </select>
+        <button type="submit">Registrar entrada</button>
+    </form>
+</body>
+</html>

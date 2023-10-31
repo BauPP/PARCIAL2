@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Encabezado de la página -->
+</head>
+<body>
+    <!-- Formulario de inicio de sesión -->
+    <form method="post" th:action="@{/login}">
+        <!-- Campos del formulario -->
+        <input type="text" name="username" placeholder="Nombre de usuario" />
+        <input type="password" name="password" placeholder="Contraseña" />
+        <button type="submit">Iniciar sesión</button>
+    </form>
+</body>
+</html>
